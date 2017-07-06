@@ -1,0 +1,487 @@
+body,html
+{
+    width:100%;
+    height:100%;
+    display:flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+header
+{
+    width:100%;
+    height:6em;
+}
+.jz
+{
+    width:100%;
+    height:1rem;
+    background:red;
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+}
+section
+{
+    width:100%;
+    height:100%;
+    background:#f3f3f3;
+    box-sizing: border-box;
+    overflow: auto;
+    position:relative;
+    >.dza
+{
+    position:fixed;
+    z-index:10;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    width:10rem;
+    height:10rem;
+    background:#000;
+    opacity: 0.5;
+    color:#fff;
+    line-height:10rem;
+    font-size:1.3rem;
+    text-align: center;
+}
+    >ul
+    {
+        width:100%;
+        border-bottom:0.1rem solid #ccc;
+        >li
+        {
+            width:100%;
+            padding:1rem;
+            box-sizing: border-box;
+            margin-top:0.15rem;
+            background:#fff;
+            &:nth-child(1)
+            {
+             margin-top:0 ;
+            }
+            h1
+            {
+                width:100%;
+                height:2rem;
+                img
+                {
+                    display: inline-block;
+                    width:2rem;
+                    height:2rem;
+                }
+                span
+                {
+                    display: inline-block;
+                    border-radius: 0.5rem;
+                    border: 0.06rem solid lightcoral;
+                    font-size:0.8rem;
+                    padding:0.5rem;
+                    float:right;
+                    text-align: center;
+                    color:#F08080;
+                }
+            }
+            p
+            {
+                display: inline-block;
+                word-break: break-word;
+                margin-top:1rem;
+            }
+            .dv
+            {
+                width:100%;
+                margin-top:1rem;
+                >ul
+                {
+                    width:100%;
+                    display:flex;
+                    >li
+                    {
+                        display:inline-block;
+                        position:relative;
+                        width:5rem;
+                        padding:0.3rem;
+                        border:0.01rem solid #ccc;
+                        margin-left:1.3rem;
+                        &:nth-child(1)
+                        {
+                        span
+                        {
+                            display:inline-block;
+                            width:2rem;
+                            height:1.5rem;
+background:url("../img/dianz.png") no-repeat;
+background-size:100% 100%;
+                        }
+                        p
+                        {
+                            display:inline-block;
+                            text-align: center;
+                            position:absolute;
+                            top:-0.5rem;
+                            left:4rem;
+                        }
+                        }
+                        &:nth-child(2)
+                        {
+                        span
+                        {
+                            display:inline-block;
+                            width:2rem;
+                            height:1.5rem;
+background:url("../img/cai.png") no-repeat;
+background-size:100% 100%;
+                        }
+                          p
+                        {
+                            display:inline-block;
+                            text-align: center;
+                            position:absolute;
+                            top:-0.5rem;
+                            left:4rem;
+                        }
+                        }
+                          &:nth-child(3)
+                        {
+                        span
+                        {
+                            display:inline-block;
+                            width:2rem;
+                            height:1.5rem;
+background:url("../img/soca.png") no-repeat;
+background-size:100% 100%;
+                        }
+                        p
+                        {
+                            display:inline-block;
+                            text-align: center;
+                            position:absolute;
+                            top:-0.5rem;
+                            left:4rem;
+                        }
+                        }
+                    }
+                }
+            }
+             .gif
+                    {
+                        display:inline-block;
+                        width:100%;
+                        margin-top:1rem;
+                        img
+                        {
+                            display: inline-block;
+                         width:100%;
+                         margin:0 auto;
+                        }
+                    }
+        }
+    }
+}
+
+.sxl
+{
+    width:3rem;
+    height:3rem;
+    background:url(../img/home.png) no-repeat;
+    background-size:cover;
+    position:absolute;
+    left:50%;
+    top:-25%;
+    overflow: hidden;
+    border-radius: 50%;
+    z-index:5;
+}
+.ts
+{
+    height:3rem;
+    background:#60dadf;
+    opacity: 0.5;
+    color:#000;
+    position:absolute;
+    left:50%;
+    transform: translateX(-50%);
+    text-align: center;
+    line-height:3rem;
+    font-size:1rem;
+    top:20%;
+    padding-left:1rem;
+    padding-right: 1rem;
+    z-index:10;
+}
+.logo
+{
+    width:100%;
+    height:3rem;
+    background:#5ed9de;
+    position:relative;
+    img
+    {
+            display:block;
+             margin:0 auto;
+                width:3rem;
+            height:3rem;
+    }
+}
+.nav
+{
+    width:100%;
+    height:3rem;
+    img
+    {
+        display:block;
+             margin:0 auto;
+                width:3rem;
+            height:3rem;
+    }
+    ul
+    {
+        width:100%;
+        height:100%;
+        display: flex;
+        box-sizing: border-box;
+        li
+        {
+            font-size:1.5rem;
+            flex: 1;
+            text-align: center;
+            line-height:3rem;
+            border:0.001rem solid #ccc;
+            a
+            {
+                color:#5dd8df;
+            }
+        }
+    }
+}
+.top
+{
+    position:fixed;
+    right: 0;
+    bottom:-4rem;
+    z-index:10;
+    transition: all 1s;
+}
+.pl
+{
+    width:100%;
+    height:100%;
+    background:red;
+    position:absolute;
+    top:0;
+    >header
+    {
+        width:100%;
+        height:3em;
+        position:relative;
+        background:#5ed9de;
+        img
+        {
+            &:nth-child(1)
+            {
+               position:absolute;
+               left:0;
+               width:2rem;
+               height:2rem;
+               top:0.5rem;
+               left:1rem;
+            }
+            &:nth-child(2)
+            {
+                display:block;
+                margin:0 auto;
+                width:3rem;
+                height:3rem;
+            }
+        }
+    }
+    >section
+    {
+        width:100%;
+        height:100%;
+        overflow: auto;
+    }
+    >footer
+    {
+    position: fixed;
+    width:100%;
+    height:4em;
+    bottom:0;
+    padding:0 2rem;
+    background:none;
+    }
+}
+#fs
+{
+    display:none;
+}
+.fsla
+{
+    display:inline-block;
+    width:2rem;
+    height:2rem;
+    background:url(../img/fs.png) no-repeat;
+    background-size:100% 100%;
+    position:absolute;
+    top:0;
+}
+#txt
+{
+    width:20rem;
+    height:2rem;
+    border: none;
+    box-shadow: 0 0.5rem 1rem 0.3rem #ccc;
+    text-indent: 1rem;
+}
+.fpl
+{
+width:100%;
+height:18rem;
+border: 0.01rem solid #ccc;
+overflow-y:scroll;
+overflow-x:none;
+li
+{
+    word-wrap: break-word;
+}
+}
+.userkong
+{
+    width:10rem;
+    height:10rem;
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    background:#000;
+    opacity: 0.5;
+    display:none;
+    color:#fff;
+    font-size:1.5rem;
+    line-height:10rem;
+    text-align: center;
+    z-index: 10;
+}
+.pm
+{
+    width:2rem;
+    height:2rem;
+    position:fixed;
+    bottom: 0;
+    left:50%;
+    animation: jz 0.3s linear infinite ;
+    border-radius: 50%;
+    border-bottom: 0.01rem solid red;
+}
+.ckdt
+{
+    width:100%;
+    height:100%;
+    background:#000;
+    position:absolute;
+    top:0;
+    left:0;
+    overflow-y: auto;
+    img
+    {
+        position:absolute;
+        top:50%;
+        transform: translateY(-50%);
+        width:100%;
+    }
+}
+.qqq
+{
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:0;
+    left:0;
+    >header
+    {
+        
+    }
+}
+@keyframes jz
+{
+    from 
+    {
+       transform: rotate(0deg);
+    }
+    to 
+    {
+     transform: rotate(360deg);
+    }
+}
+
+@keyframes pmjz
+{
+    from 
+    {
+       transform: rotate(0deg);
+    }
+    to 
+    {
+     transform: rotate(360deg);
+    }
+}
+.pmjz
+{
+    width:2rem;
+    height:2rem;
+    position:fixed;
+    left:50%;
+    top:50%;
+    animation: pmjz 0.3s linear infinite ;
+    border-radius: 50%;
+    border-bottom: 0.01rem solid red;
+}
+.ml
+{
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:0;
+    z-index:10;
+    background:#ccc;
+    overflow: auto;
+    .nav
+    {
+        width:100%;
+        height:3rem;
+        font-size:1rem;
+        color:#F08080;
+        background:#fff;
+    }
+    .xhd
+    {
+        width:10rem;
+        height:10rem;
+        font-size:0.5rem;
+        color:#fff;
+        background:#000000;
+        line-height:10rem;
+        text-align: center;
+        position:absolute;
+        left:50%;
+        top:50%;
+        transform: translate(-50%,-50%);
+        word-break: break-word;
+        padding:1rem;
+        opacity: 0.5;
+    }
+    >ul
+    {
+        width:100%;
+        border: 0.01rem solid #ccc;
+        >li
+        {
+            width:100%;
+            padding:1rem;
+            box-sizing: border-box;
+            margin-top:0.15rem;
+            background:#fff;
+        }
+    }
+}

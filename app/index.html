@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+		<title></title>
+		<style>
+		*
+		{
+			margin:0;
+				padding:0;
+		}
+			html,body
+			{
+				width:100%;
+				height:100%;
+				overflow: hidden;
+			}
+
+			.dv
+			{
+				width:100%;
+				height:100%;
+				display: inline-block;
+				position:relative;
+			}
+			.dv ul
+			{
+				width:400%;
+				height:100%;
+				list-style: none;
+				transition: all 1s;
+				position:absolute;
+				left:0;
+				top:0;
+			}
+			.dv ul li
+			{
+				float:left;
+				width:25%;
+				height:100%;
+				position:relative;
+			}
+			a
+			{
+				text-decoration: none;
+				color:#CCCCCC;
+			}
+			.dv ul li p
+			{
+				width:3rem;
+				height:3rem;
+				border-radius: 0.5rem;
+				position:absolute;
+				left:50%;
+				top:50%;
+				transform: translate(-50%,-50%);
+				background:cadetblue;
+				font-size:0.5rem;
+				text-align: center;
+				line-height:3rem;
+			}
+			
+			.dv ul li img
+			{
+				width:100%;
+				height:100%;
+			}
+			.dv span
+			{
+				display:inline-block;
+				width:0.6rem;
+				height:0.6rem;
+				border:0.01rem solid #e8e8e8;
+				position:absolute;
+				z-index:1;
+				border-radius: 50%;
+				top:90%;
+				left:50%;
+				transform: translateX(-50%,-50%);
+			}
+			.dv span:nth-child(1)
+			{
+				left:6rem;
+			}
+			.dv span:nth-child(2)
+			{
+				left:7rem;
+			}
+			.dv span:nth-child(3)
+			{
+					left:8rem;
+			}
+			.dv span:nth-child(4)
+			{
+				left:9rem;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="dv">
+			<span style="background:orangered"></span>
+			<span></span>
+			<span></span>
+			<span></span>
+			<ul>
+				<li><img src="images/1.png"></li>
+				<li><img src="images/2.png"></li>
+				<li><img src="images/3.png"></li>
+				<li><img src="images/4.png"><p><a href="app.html">开始使用</a></p></li>
+			</ul>
+			
+		</div>
+	</body>
+</html>
+<script>
+	document.documentElement.style.fontSize=innerWidth/16+"px";
+	var dv=document.getElementsByClassName("dv");
+	var u=dv[0].getElementsByTagName("ul");
+	var list=u[0].getElementsByTagName("li");
+	var w=list[0].clientWidth;
+	var sp=dv[0].getElementsByTagName("span");
+	var x;
+	var xtwo;
+	var n=0;
+	console.log(w);
+	dv[0].addEventListener("touchstart",function(ev)
+	{
+		x=ev.changedTouches[0].pageX
+	})
+	dv[0].addEventListener("touchmove",function(ev)
+	{
+		xtwo=ev.changedTouches[0].pageX
+	})
+	dv[0].addEventListener("touchend",function()
+	{
+		if(x-xtwo>0)
+		{
+			n++;
+			if(n==4)
+			{
+				n=3;
+				return;
+			}
+			for(var i=0;i<sp.length;i++)
+			{
+				sp[i].style.background="none";
+			}
+			sp[n].style.background="orangered";
+			u[0].style.left=-w*n+"px";
+		}
+		if(x-xtwo<0)
+		{
+			n--
+			if(n==-1)
+			{
+				n=0;
+				return;
+			}
+			for(var i=0;i<sp.length;i++)
+			{
+				sp[i].style.background="none";
+			}
+			sp[n].style.background="orangered";
+			u[0].style.left=-w*n+"px";
+		}
+	})
+</script>
