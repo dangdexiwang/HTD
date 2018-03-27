@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="./css/modular.css">
+	<link rel="stylesheet" href="./css/public.css">
+	<link rel="stylesheet" href="./css/bootstrap.min.css">
+</head>
+<body>
+	<header>
+	
+	</header>
+	<section>
+		<div class="modular-left">
+			<ul class="clearfix">
+				<li>
+					<a href="article.html">
+						<i class="glyphicon glyphicon-list-alt"></i><span>文章管理</span>
+					</a>
+				</li>
+
+				<li>
+					<a href="friend.html">
+						<i class="glyphicon glyphicon-list-alt"></i><span>友链管理</span>
+					</a>
+				</li>
+
+				<li>
+					<a href="article.html">
+						<i class="glyphicon glyphicon-list-alt"></i><span>系统参数</span>
+					</a>
+				</li>
+
+				<li>
+					<a href="index.html">
+						<i class="glyphicon glyphicon-list-alt"></i><span>返回模块页</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="modular-content">
+			<div class="modular-content-top">
+				<ul class="clearfix modular-list">
+					<li class="modular-allList">批量生产:</li>
+					<li class="modular-allList friend-delete"><a href="javascript:;"><i class="glyphicon glyphicon-list-alt icon-rst"></i>删除</a></li>
+					<li class="modular-allList js-friend-xz"><a href="friendXz.html"><i class="glyphicon glyphicon-list-alt icon-rst"></i>新增</a></li>
+				</ul>
+				<div class="modular-input">
+					<input type="text" class="modular-border-none"><i class="glyphicon glyphicon-search"></i>
+				</div>
+			</div>
+
+			<div class="modular-content-center">
+			</div>
+
+			<div class="modular-content-bottom" style="background:#fff;padding: 35px;text-align: center;">
+				<div class="M-box3"></div>
+			</div>
+		</div>
+	</section>
+	<!-- Button trigger modal -->
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+    
+    </div>
+  </div>
+</div>
+</body>
+</html>
+<script src="js/require.js"></script>
+<script>
+	requirejs(["js/requireConf"],function(require){
+		requirejs(["jquery","bootstrap","friend"],function(jquery,bootstrap,friend){
+			friend.init();
+		})
+	})
+</script>

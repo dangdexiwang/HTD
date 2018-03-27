@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="./css/modular.css">
+	<link rel="stylesheet" href="./css/public.css">
+	<link rel="stylesheet" href="./css/bootstrap.min.css">
+	<link rel="stylesheet" href="./css/summernote.css">
+	<link rel="stylesheet" href="./css/modular.css">
+	<link rel="stylesheet" href="./css/daterangepicker.css">
+	<link rel="stylesheet" href="./css/iconfont.css">
+</head>
+<body>
+	<header>
+	
+	</header>
+	<section>
+		<div class="modular-left">
+			<ul class="clearfix">
+				<li>
+					<a href="article.html">
+						<i class="glyphicon glyphicon-list-alt"></i><span>文章管理</span>
+					</a>
+				</li>
+
+				<li>
+					<a href="friend.html">
+						<i class="glyphicon glyphicon-list-alt"></i><span>友链管理</span>
+					</a>
+				</li>
+
+				<li>
+					<a href="article.html">
+						<i class="glyphicon glyphicon-list-alt"></i><span>系统参数</span>
+					</a>
+				</li>
+
+				<li>
+					<a href="index.html">
+						<i class="glyphicon glyphicon-list-alt"></i><span>返回模块页</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="modular-content">
+			
+		</div>
+	</section>
+</body>
+</html>
+<script src="js/require.js"></script>
+<script>
+	requirejs(["js/requireConf"],function(require){
+		requirejs(["jquery","bootstrap","friendMt"],function(jquery,bootstrap,friendMt){
+			friendMt.init();
+		})
+	})
+</script>

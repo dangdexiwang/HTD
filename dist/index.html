@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="./css/modular.css">
+	<link rel="stylesheet" href="./css/public.css">
+	<link rel="stylesheet" href="./css/bootstrap.min.css">
+</head>
+<body>
+	<div class="modal-content">
+	</div>
+</body>
+</html>
+<script src="js/require.js"></script>
+<script>
+	requirejs(["js/requireConf"],function(require){
+		requirejs(["jquery","bootstrap","index"],function(jquery,bootstrap,index){
+			index.init();
+		})
+	})
+</script>
